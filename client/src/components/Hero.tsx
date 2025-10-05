@@ -3,7 +3,6 @@ import slide2 from "../assets/slider.jpg"
 import { Swiper, SwiperSlide } from "swiper/react"
 import { Autoplay, Navigation } from "swiper/modules"
 import 'swiper/css';
-// import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 const Hero = () => {
   return (
@@ -22,7 +21,7 @@ const Hero = () => {
 
           navigation={true}
           modules={[ Navigation,Autoplay]}
-          className='flex w-full h-full justify-between transition-all duration-3000  items-center '
+          className='flex w-full h-full justify-between transition-all duration-3000 swiper  items-center '
       >
         <div className="">
            <SwiperSlide>
