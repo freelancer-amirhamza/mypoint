@@ -5,31 +5,52 @@ import logo from "../assets/logo_blue_.png";
 import { nav_items } from "../config";
 import { Link } from "react-router";
 import { useState } from "react";
-
+import { motion } from "framer-motion";
 
 
 const Header = () => {
     const [activeSidebar, setActiveSidebar] =  useState(false)
+    const preventVariants = {
+        initial:{},
+        hover:{}
+    };
+    const childVariants = {
+        initial:{width:0},
+        hover:{width:"100%", transition:{duration:0.3}}
+    }
   return (
     <div className="flex items-center relative  w-full bg-white z-50 justify-center  shadow-lg">
         <div className="container flex items-center justify-between h-full  w-full ">
             {/* logo  */}
-            <div className="flex items-center  min-w-fit py-2 ">
+            <Link to={"/"} className="flex items-center  min-w-fit py-2 ">
                 <img src={bangladesh} alt="" className="h-16 w-16 " />
                 <img src={logo} alt="" className="h-16 object-cover " />
-            </div>
+            </Link>
 
-            {/* nav items for small device */}
+            {/* nav items for large device */}
             <div className={`  items-center md:flex transition-transform duration-500 hidden w-full
             justify-center `}>
                 <ul className="items-center justify-end w-full gap-5 flex ">
                     {nav_items.map((item,index)=>{
                         return(
+
                             <Link to={item.path} key={index}
                             className="flex   items-center first:bg-primary first:text-white first:px-2 last:text-orange-600 font-semibold py-2 rounded justify-center
                             transition-colors duration-250 text-neutral-700 "
                             >
-                            <span className="text-xl"> {item.label} </span>
+                                <motion.div
+                                variants={preventVariants}
+                                initial="initial"
+                                whileHover="hover"
+                                style={{ cursor: "pointer" }}
+                                className="flex flex-col w-fit mx-auto gap-2">
+                                    <span className="text-base"> {item.label} </span>
+                                    <motion.div
+                                    variants={childVariants}
+                                    className="h-0.5   bg-primary"
+                                    style={{width:0}}
+                                    />
+                                </motion.div>
                             </Link>
                         )
                     })}
