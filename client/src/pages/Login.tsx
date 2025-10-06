@@ -1,6 +1,6 @@
-import React from 'react'
 import bg_login  from "../assets/ns_home_page.jpg"
 import login_logo from "../assets/login-page.png"
+
 const Login = () => {
   return (
     <div className=" bg-no-repeat bg-cover min-h-screen w-full flex h-full "
