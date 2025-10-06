@@ -1,9 +1,10 @@
 import slide1 from "../assets/slider_2.jpg"
 import slide2 from "../assets/slider.jpg"
-import { Swiper, SwiperSlide } from "swiper/react"
-import { Autoplay, Navigation } from "swiper/modules"
 import 'swiper/css';
 import 'swiper/css/navigation';
+import { Swiper, SwiperSlide } from "swiper/react"
+import { Autoplay, Navigation } from "swiper/modules"
+
 const Hero = () => {
   return (
     <div className="flex items-center w-full justify-center h-full">
@@ -13,7 +14,7 @@ const Hero = () => {
           loop={true}
           pagination={{
             clickable: true,
-          }}
+          }}  
           autoplay={{
             delay:3000,
             disableOnInteraction:false
