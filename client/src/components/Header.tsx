@@ -16,7 +16,7 @@ const Header = () => {
     };
     const childVariants = {
         initial:{width:0},
-        hover:{width:"100%", transition:{duration:0.3}}
+        hover:{width:"100%", transition:{duration:0.5}}
     }
   return (
     <div className="flex items-center relative  w-full bg-white z-50 justify-center  shadow-lg">
@@ -33,9 +33,8 @@ const Header = () => {
                 <ul className="items-center justify-end w-full gap-5 flex ">
                     {nav_items.map((item,index)=>{
                         return(
-
                             <Link to={item.path} key={index}
-                            className="flex   items-center first:bg-primary first:text-white first:px-2 last:text-orange-600 font-semibold py-2 rounded justify-center
+                            className="flex   items-center first:bg-primary first:text-white first:px-2 last:text-orange-600 font-semibold py-1 rounded justify-center
                             transition-colors duration-250 text-neutral-700 "
                             >
                                 <motion.div
@@ -47,7 +46,7 @@ const Header = () => {
                                     <span className="text-base"> {item.label} </span>
                                     <motion.div
                                     variants={childVariants}
-                                    className="h-0.5   bg-primary"
+                                    className={`h-0.5   bg-primary ${index === 0 ? "hidden": ""}`}
                                     style={{width:0}}
                                     />
                                 </motion.div>
