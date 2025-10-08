@@ -17,7 +17,14 @@ export const nav_items = [
     {icon:MdAddCall, label:"01612611611", path:"/"},
 ];
 
-
+export const admin_nav_items = [
+    {icon:RiLoginBoxLine, label:"ড্যাসবোর্ড", path:"/dashboard"},
+    {icon:AiOutlineFileSearch, label:"নাগরিক তৈরী করুন", path:"/"},
+    {icon:AiOutlineFileSearch, label:"নাগরিকের তালিকা", path:"/"},
+    {icon:RiHomeOfficeLine, label:"নতুন আবেদন করুন", path:"/"},
+    {icon:MdAddCall, label:"সকল আবেদনের তালিকা", path:"/"},
+    {icon:MdAddCall, label:"ইউনিয়ন অনুযায়ী ট্রেড লাইসেন্স রিপোর্ট", path:"/"},
+]
 export const service_items = [
     {image:holdingTax, label:"হোল্ডিং ট্যাক্স", path:"/login"},
     {image:tradeLicense, label:"ট্রেড লাইসেন্স ", path:"/login"},
@@ -67,3 +74,43 @@ export const emergency_services = [
     {label:"বিআরটিএ সেবাসমূহ ", path:"https://bsp.brta.gov.bd/"},
     {label:"সরকারি স্কুলে ভর্তি ", path:"https://gsa.teletalk.com.bd/"},
 ];
+
+
+export const applicationInfo = [
+    {
+        title:"total",
+        info:[
+            {label:"নাগরিকের সংখ্যা", count:"১০"},
+            {label:"আবেদনের সংখ্যা", count:"00"},
+            {label:"অনুমোদিত সনদ", count:"00"},
+            {label:"বর্তমান ব্যালেন্স", count:"00"},
+        ]
+    },
+    {
+        title:"০৮/১০/২০২৫ তারিখের তথ্য",
+        info:[
+            {label:"নাগরিকের সংখ্যা", count:"১০"},
+            {label:"আবেদনের সংখ্যা", count:"00"},
+            {label:"অনুমোদিত সনদ", count:"00"},
+            {label:"বর্তমান ব্যালেন্স", count:"00"},
+        ]
+    },
+    {
+        title:"অক্টোবর মাসের তথ্য",
+        info:[
+            {label:"নাগরিকের সংখ্যা", count:"১০"},
+            {label:"আবেদনের সংখ্যা", count:"00"},
+            {label:"অনুমোদিত সনদ", count:"00"},
+            {label:"বর্তমান ব্যালেন্স", count:"00"},
+        ]
+    },
+    {
+        title:"২০২৫ সনের তথ্য",
+        info:[
+            {label:"নাগরিকের সংখ্যা", count:"১০"},
+            {label:"আবেদনের সংখ্যা", count:"00"},
+            {label:"অনুমোদিত সনদ", count:"00"},
+            {label:"বর্তমান ব্যালেন্স", count:"00"},
+        ]
+    },
+]

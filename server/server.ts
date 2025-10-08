@@ -6,10 +6,11 @@ const PORT = process.env.PORT || 4000;
 
 
 
-app.get("/",(req:any,res:any)=>{
+app.get("/", (req, res) => {
     res.send(`<center><h1>server is running successfully!</h1><br/> <h1>Welcome to nagorik service server site!</h1></center>`)
 });
 
-app.listen(PORT, async(req:any,res:any)=>{
+app.listen(PORT, async(req,res)=>{
     console.log(`server is running at http://localhost:${PORT}`);
 })
+

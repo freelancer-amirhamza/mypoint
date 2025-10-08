@@ -2,7 +2,7 @@ import React from 'react'
 
 const AdminHome = () => {
   return (
-    <div>AdminHome</div>
+    <div className='w-full flex'>AdminHome</div>
   )
 }
 
