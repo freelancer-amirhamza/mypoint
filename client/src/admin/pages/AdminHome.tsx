@@ -1,8 +1,7 @@
-import React from 'react'
 
 const AdminHome = () => {
   return (
-    <div className='w-full flex'>AdminHome</div>
+    <div className='min-w-full flex'>AdminHome</div>
   )
 }
 

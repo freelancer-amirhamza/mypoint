@@ -1,13 +1,16 @@
 import { RiLoginBoxLine } from "react-icons/ri";
 import { AiOutlineFileSearch } from "react-icons/ai";
 import { RiHomeOfficeLine } from "react-icons/ri";
-import { MdAddCall } from "react-icons/md";
+import { MdAddCall, MdOutlineDocumentScanner } from "react-icons/md";
 import {
     holdingTax, tradeLicense, citizenship, character, nationality,inheritance,succession,
     family, permanentResident, samePerson, newVoter,voter_area_transfer,marriage, unmarried,
     non_remarriage,widow, childless, orphans, disability, parental_consent,unemployed,
     financial_insolvency,landless,agriculture, tribal,monthly_income, annual_income,death_certificate,
 } from "../assets"
+import { IoIosPeople } from "react-icons/io";
+import { TbCertificate } from "react-icons/tb";
+import { FaSackDollar } from "react-icons/fa6";
 
 export const nav_items = [
     {icon:RiLoginBoxLine, label:"প্রশাসনিক লগইন", path:"/login"},
@@ -80,10 +83,10 @@ export const applicationInfo = [
     {
         title:"total",
         info:[
-            {label:"নাগরিকের সংখ্যা", count:"১০"},
-            {label:"আবেদনের সংখ্যা", count:"00"},
-            {label:"অনুমোদিত সনদ", count:"00"},
-            {label:"বর্তমান ব্যালেন্স", count:"00"},
+            {label:"নাগরিকের সংখ্যা", count:"১০",icon:IoIosPeople},
+            {label:"আবেদনের সংখ্যা", count:"00",icon:MdOutlineDocumentScanner},
+            {label:"অনুমোদিত সনদ", count:"00",icon:TbCertificate},
+            {label:"বর্তমান ব্যালেন্স", count:"00",icon:FaSackDollar},
         ]
     },
     {
