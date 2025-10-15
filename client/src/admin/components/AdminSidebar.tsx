@@ -6,8 +6,8 @@ import { admin_nav_items } from "../../config";
 function AdminSidebar({activeSidebar}) {
 
   return (
-     <div className={`  min-w-60 items-center flex    justify-center gap-5`}>
-                <ul className={` ${activeSidebar ? "translate-x-0 " : "-translate-x-60 "} transition-transform duration-500 bg-neutral-700 min-h-screen w-full`}>
+     <div className={`    flex    justify-center gap-5 bg-neutral-300`}>
+                <ul className={` ${activeSidebar ? "translate-x-0 min-w-60 " : "-translate-x-60  max-w-0"} transition-all duration-500 bg-neutral-700 min-h-screen w-full`}>
                     {admin_nav_items.map((item,index)=>{
                         const Icon = item.icon;
                         return(

@@ -80,15 +80,7 @@ export const emergency_services = [
 
 
 export const applicationInfo = [
-    {
-        title:"total",
-        info:[
-            {label:"নাগরিকের সংখ্যা", count:"১০",icon:IoIosPeople},
-            {label:"আবেদনের সংখ্যা", count:"00",icon:MdOutlineDocumentScanner},
-            {label:"অনুমোদিত সনদ", count:"00",icon:TbCertificate},
-            {label:"বর্তমান ব্যালেন্স", count:"00",icon:FaSackDollar},
-        ]
-    },
+    
     {
         title:"০৮/১০/২০২৫ তারিখের তথ্য",
         info:[
